@@ -1,3 +1,8 @@
+This is a simple example of a wizard application using React with Redux store and Redux form. One Redux form is used to
+collect data on all three slides. On each slide the store is updated with new data. On component onUnmount hook, component fields are unregistered allowing form update.
+In the end, there is a results page to display all the data collected.
+
+
 This project was bootstrapped with [Create React App]//(https://github.com/facebookincubator/create-react-app).
 
 ### `npm start`

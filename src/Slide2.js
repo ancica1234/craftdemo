@@ -9,30 +9,29 @@ const renderFields = ({input, label,type}) => (
         </div>
 );
 
-let Page2 = function(props) {
+let Slide2 = function(props) {
     const {handleSubmit, previousPage} = props;
     return (
-
         <form onSubmit={handleSubmit}>
             <div>What's your name? </div>
-            <Field  name="yourname" type="text"  component={renderFields}>
-
-            </Field>
-            <div> <button type="button" className="previous" onClick = {previousPage}>Previous</button>
+            <Field  name="yourname" type="text"  component={renderFields}></Field>
+            <div> 
+                <button type="button" className="previous" onClick = {previousPage}>Previous</button>
             </div>
-            <div> <button type="submit" className="next">Next</button>
+            <div> 
+                <button type="submit" className="next">Next</button>
             </div>
         </form>
 
     )
 };
 
-Page2 =  reduxForm({
+Slide2 =  reduxForm({
         form:"wizard",
         destroyOnUnmount: false, //        <------ preserve form data
         forceUnregisterOnUnmount: true, // <------ unregister fields on unmount
     }
-)(Page2);
+)(Slide2);
 
 
-export default Page2;
+export default Slide2;

@@ -9,30 +9,29 @@ const renderField = ({ input, label, type }) => (
         </div>
     </div>
 );
-let Page1 = function(props) {
+
+let Slide1 = function(props) {
   const {handleSubmit} = props;
   return (
-      
       <form onSubmit={handleSubmit}>
           <Field  label="How are you" 
                   name="howareyou" 
                   type="text"  
                   component={renderField}>
-              
           </Field>
-          <div>     <button type="submit" className="next">Next</button>
+          <div> 
+              <button type="submit" className="next">Next</button>
           </div>
-        </form>  
-      
+      </form>
   )
 };
 
-Page1 =  reduxForm({
+Slide1 =  reduxForm({
         form:"wizard",
         destroyOnUnmount: false, //        <------ preserve form data
         forceUnregisterOnUnmount: true, // <------ unregister fields on unmount
     }
-)(Page1);
+)(Slide1);
 
 
-export default Page1;
+export default Slide1;

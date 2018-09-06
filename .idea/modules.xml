@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/craftdemo.iml" filepath="$PROJECT_DIR$/.idea/craftdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../WizardWithReduxForm/.idea/WizardWithReduxForm.iml" filepath="$PROJECT_DIR$/../WizardWithReduxForm/.idea/WizardWithReduxForm.iml" />
     </modules>
   </component>
 </project>

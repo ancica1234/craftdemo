@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 
-import Page1 from "./Page1";
-import Page2 from "./Page2";
-import Page3 from "./Page3";
-import Page4 from "./Page4";
+import Slide1 from "./Slide1";
+import Slide2 from "./Slide2";
+import Slide3 from "./Slide3";
+import Slide4 from "./Slide4";
 
 
 class CraftDemoForm extends Component {
@@ -37,10 +37,10 @@ class CraftDemoForm extends Component {
         return (
           <div>
               here
-              {page === 1 && <Page1 onSubmit={this.nextPage}></Page1>}
-              {page === 2 && <Page2   previousPage={this.previousPage} onSubmit={this.nextPage}></Page2>}
-              {page === 3 && <Page3  previousPage={this.previousPage} onSubmit={this.nextPage}></Page3>}
-              {page === 4 && <Page4  previousPage={this.previousPage} ></Page4>}
+              {page === 1 && <Slide1 onSubmit={this.nextPage}></Slide1>}
+              {page === 2 && <Slide2   previousPage={this.previousPage} onSubmit={this.nextPage}></Slide2>}
+              {page === 3 && <Slide3  previousPage={this.previousPage} onSubmit={this.nextPage}></Slide3>}
+              {page === 4 && <Slide4  previousPage={this.previousPage} ></Slide4>}
          
           </div>
             

@@ -4,7 +4,7 @@ import './index.css';
 import { Provider } from "react-redux";
 import store from "./store";
 import registerServiceWorker from './registerServiceWorker';
-import CraftDemoForm from "./CraftDemoForm";
+import WizardForm from "./WizardForm";
 import { Values } from "redux-form-website-template";
 
 
@@ -12,7 +12,7 @@ ReactDOM.render(
 
     <Provider store={store}>
         <div>
-            <CraftDemoForm  />
+            <WizardForm/>
               </div>
     </Provider>,
     document.getElementById('root'));
